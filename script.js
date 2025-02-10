@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     iframeContainer.innerHTML = "";
     iframeContainer.appendChild(iframe);
 
-    const iframeHTML = `<iframe src="${url}" width="${width}" height="${height}" style="border: 1px solid #ccc;"></iframe>`;
+    const iframeHTML = `<script src="passwordprotection.js"></script>
+    <iframe id="iframe" src="${url}" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; border: none;"></iframe>`;
     iframeCode.value = iframeHTML;
   }
 });
